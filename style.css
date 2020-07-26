@@ -16,8 +16,7 @@ input{outline: unset;}
 /* configaração por class e id personalizados */
 #aplicacao{
    box-sizing: border-box;
-   letter-spacing: -0.82%;
-   background-color: #0bd859;
+   letter-spacing: -0.62%;
 }
 
 /* a parte do topo da aplicação e titulo etc */
