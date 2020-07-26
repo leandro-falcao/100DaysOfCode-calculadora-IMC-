@@ -17,6 +17,7 @@ input{outline: unset;}
 #aplicacao{
    box-sizing: border-box;
    letter-spacing: -0.82%;
+   background-color: #0bd859;
 }
 
 /* a parte do topo da aplicação e titulo etc */

@@ -1,11 +1,12 @@
-./antigo-primeira-tela.tar.gz
-./node_modules
+antigo-primeira-tela.tar.gz
+node_modules
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig
 .flowconfig
 *~
 *.pyc
+*.tar.gz
 .grunt
 _SpecRunner.html
 __benchmarks__
