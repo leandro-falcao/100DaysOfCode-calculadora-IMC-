@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora de imc</title>
+    <link rel="stylesheet" href="limpar-estilo.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    
+    <div id="root" class="flex row wrap max justify-center align-center">
+
+      <div id="aplicacao" class="flex column justify-center">
+        <div class="topo-aplicacao flex max justify-center">
+           <span>calcular o imc</span>
+         </div>
+         <!-- aqui o o input e botões para calcular e limpar -->
+        <div class="secao-aplicacao flex column">
+           <div class="box-inputs flex wrap justify-center"> 
+               <div class="valores-inputs flex column">
+                  <span class="peso">Peso <span>em quilo</span> </span>
+                  <input type="number" 
+                     placeholder="ex: 65" 
+                     maxlength="4"
+                     max="300"
+                     class="dados-peso">
+                    </div>
+               
+               <div class="valores-inputs flex column">
+                  <span class="peso">Altura <span>em cm</span> </span>
+                  <input type="number" 
+                     placeholder="ex: 170" 
+                     maxlength="3"
+                     max="240"
+                     class="dados-altura">
+                    </div>
+
+           </div>
+
+           <div class="botoes flex" >
+              <button type="button" class="botao-acao calculo" >calcular</button>
+              <button type="button" class="botao-acao limpar" >limpar</button>
+           </div>
+
+           <div class="contaeinerResultado">
+            <p id="resultado" class="resultado-imc">  </p> 
+           </div>
+
+        </div> <!-- end div secao aplicacao, onde estão o miolo principal da aplicacao -->
+
+         <!-- começo do rodape da nossa aplicação -->
+        <div class="piso-aplicacao flex column justify-center">
+          <div class="indice flex column justify-center align-center">
+            <p><span></span><span>IMC</span><span>Peso</span></p>
+            
+            <div class="magreza">
+              <span>magreza</span> <span>-18.5</span><span></span>
+            </div>
+
+            <div class="normal">
+              <span>Normal</span> <span>-18.5</span><span></span>
+            </div>
+
+            <div class="sobrepeso">
+              <span>Normal</span> <span>-18.5</span><span></span>
+            </div>
+
+            <div class="obesidade">
+              <span>Normal</span> <span>-18.5</span><span></span>
+            </div>
+
+          </div>
+
+        </div> <!-- fim do footer -->
+
+      </div> <!-- end div aplicação -->
+    </div> <!-- end div root -->
+
+    <script src="main.js"></script>
+  </body>
+</html>

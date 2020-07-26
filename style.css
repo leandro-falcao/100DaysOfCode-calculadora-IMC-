@@ -1,0 +1,129 @@
+*{ box-sizing: boder-box;}
+/* div{display: flex;} */
+
+input{outline: unset;}
+#root {
+   background-color: white; 
+   color: black;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   box-sizing: boder-box;
+   color: #f1e31b;
+   /* padding: 0.5vw 0.5vw 0.5vw 0.5vw; */
+}
+
+/* configaração por class e id personalizados */
+#aplicacao{
+   box-sizing: border-box;
+   letter-spacing: -0.82%;
+}
+
+/* a parte do topo da aplicação e titulo etc */
+.topo-aplicacao {
+   box-sizing: boder-box;
+   font-weight: 760;
+   font-size: 3em;
+   text-align: center;
+   padding-bottom: 1vh;   
+}  
+/* texto titulo span no topo aplicação */
+.topo-aplicacao :nth-child(1){
+   outline: orange;
+   color: antiquewhite;
+   margin-top: 1vh;
+   width: 98%;
+   /* text-shadow: rgb(143, 133, 1) -1px -2px; */ 
+   text-shadow:#f31818 1px -3px, #1c06db -2px 1px, #0bd859 2px 1px, #e410af -1px -1px;
+   text-decoration-style: double;
+   }
+   /*  */
+
+
+   /* aqui onde fica os inputs e botoes de dados principais */
+   .secao-aplicacao {
+      box-sizing: boder-box;
+      display: flex;
+      align-items: center;
+      padding-top: 2%;
+      font-weight: 700;
+      /* width: calc(100vw-40px); */
+      /* propriedade: calc(expressão) */
+      /* width: calc(100% - 80px); */
+      
+   }
+
+        /* codigo especifico para os inputs */
+         .secao-aplicacao .valores-inputs{
+            align-items: center;
+            margin-right: 2.30vw;
+            margin-bottom: 3.20vh;   
+         }
+         /* Pegando o span filho de valores-inputs */
+         .secao-aplicacao .valores-inputs :nth-child(1){
+            color: #440174;
+            font-size: 1.39em;
+            margin-right: 1vw;
+         }
+         /* Pegando span dentro de span, letras menores */
+            .secao-aplicacao .valores-inputs :nth-child(1) :nth-child(1){
+               color: #222e02;
+               font-size: 60%;
+            }
+            
+            /* configuração dos inputs */
+            .secao-aplicacao .valores-inputs :nth-child(2){
+               border-radius: 7vh;
+               padding: 8%;               
+               background-color: rgba(30, 233, 223, 0.21);
+            }   
+
+
+   /* aqui configurações para os dois botoes */
+   .secao-aplicacao .botoes {margin-top: 1vh;}
+   .secao-aplicacao .botoes .botao-acao{
+      background-color: #1bbeb1;
+      text-align: center;
+      color: #f1eaea;
+      padding: 13px;
+      border-radius: 57%;
+      outline: unset;
+      margin-right: 0.94em;
+      text-shadow: 20px;
+   }
+   /* estilo primeiro botao */
+   .secao-aplicacao .botoes :nth-child(1){
+      background-color: rgba(216, 117, 24, 0.99);  
+   }
+
+   /* o segundo botão */
+   .secao-aplicacao .botoes :nth-child(2){
+      background-color: #d62929;
+   }
+   /*  */
+
+   .contaeinerResultado #resultado{
+      margin-right: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.97rem;
+      margin-left: 1rem;
+      background-color: #1bbeb1;
+   }
+
+   /* a parte inferiot da aplicacao */
+   .piso-aplicacao {
+      box-sizing: boder-box;
+      background-color: #f1e31b;
+      color: #1c06db;
+      /* align-items: center; */
+   }
+
+
+/* as classes multi tags */
+.flex {display: flex;}
+.max {flex: 1;}
+.column {flex-direction: column;}
+.row {flex-direction: row;}
+.wrap {flex-wrap: wrap;}
+.justify-center{justify-content: center;}
+.align-center {align-items: center;}
