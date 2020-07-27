@@ -30,11 +30,14 @@ const calcularImc = () => {
 
                       const mudarCor = corParamResultado
                                           .setAttribute('style', `background-color: #0bd859;
-                                                                  color: #222e02; 
+                                                                  color: #d62929; 
                                                                   margin-top: 0.74rem; 
                                                                   margin-bottom: 0.53rem; 
                                                                   margin-left: 0rem;
-                                                                  margin-right: 0rem; `
+                                                                  margin-right: 0rem;
+                                                                  font-size: 2rem;
+                                                                  font-weight: 800;
+                                                                  `
                                           );
 
 
