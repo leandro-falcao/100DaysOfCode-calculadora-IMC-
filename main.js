@@ -5,26 +5,26 @@ const calcularImc = () => {
           .querySelector('.botoes .calculo')
                 .addEventListener('click', function(){
 
-                      let peso = document.querySelector('.dados-peso')
+                      const peso = document.querySelector('.dados-peso')
                                                                   .value;
-                      let altura = document.querySelector('.dados-altura')
+                      const altura = document.querySelector('.dados-altura')
                                                                   .value;
                       
-                      let resultado = Number( peso /  Math.pow( (altura / 100), 2) ); 
-                                                          // ((altura / 100) ** 2) )
-                                                          //  (altura / 100) ) ) );
+                      const resultado = Number( peso /  Math.pow( (altura / 100), 2) ); 
+                                                          
                       console.log(resultado);
                       
-                      let mudarBotao = document.querySelector('#root');
+                     const mudarBotao = document.querySelector('#root');
                       console.log(mudarBotao);
                       
-                      let valorImc = document
-                                      .querySelectorAll(`.secao-aplicacao .resultado-imc`);
+                     const valorImc = document
+                                       .querySelectorAll(`.secao-aplicacao .resultado-imc`);
+                                
                               valorImc[valorImc.length - 1]
                                         .textContent = resultado
-                                                          .toFixed(2)
-                                                              .replace('.', ',');
-                      
+                                                            .toFixed(2)
+                                                                .replace('.', ',');
+                        
                       const corParamResultado = document
                                                   .querySelector('.secao-aplicacao  div .resultado-imc');
 
@@ -41,21 +41,83 @@ const calcularImc = () => {
                                           );
 
 
-                      const mudarCor1 = document
+                      const mudarFooter = document
                                           .querySelector(".piso-aplicacao");     
-                                mudarCor1.style.color = "#0f1";
-                                mudarCor1.style.backgroundColor = "#000";
-                                // mudarCor1.style.marginTop = "10%";
-                                // mudarCor1.style.marginBottom = "10%";
+                                mudarFooter.style.color = "#0f1";
+                                mudarFooter.style.backgroundColor = "#000";
+                                // mudarFooter.style.marginTop = "10%";
+                                // mudarFooter.style.marginBottom = "10%";
 
-                      console.log(corParamResultado);
-
-                      console.log(peso);
-                      console.log(altura);
-                      console.log('ultimo item: ', valorImc[ (valorImc.length-1) ] );  
+                      console.log('valor do peso: ',peso);
+                      console.log('a altura é: ', altura);
                     
                     }
                   );
+    
+  let botaoLimpar = document
+          .querySelector('.clear')
+          console.log(botaoLimpar);
+                botaoLimpar.addEventListener('click', clear)
+  
+    function clear() {  
+      // const nam = "leandro";
+      console.log('OLA mundo');
+      let footer = document
+            .querySelector('#demo').innerHTML = "ola mundo text"
+       let resetar = document
+                      .querySelector('.valores-inputs').reset()     
+    }                        
+                    //  const valorImc = document
+                    //                    .querySelectorAll(`.secao-aplicacao .resultado-imc`);
+                                
+                    //           valorImc[valorImc.length - 1]
+                    //                     .textContent = resultado
+                    //                                         .toFixed(2)
+                    //                                             .replace('.', ',');
+                    // document.getElementById("demo").innerHTML = "Paragraph changed!";
+
+                        
+                      // const corParamResultado = document
+                      //                             .querySelector(`.secao-aplicacao  .containerResultado`).innerHTML = nam
+
+
+                      // const mudarCor = corParamResultado 
+
+                                            //       .setAttribute('style', `background-color: #f0b;
+                                            //                         color: #d62929; 
+                                            //                         margin-top: 0.74rem; 
+                                            //                         margin-bottom: 0.53rem; 
+                                            //                         margin-left: 0rem;
+                                            //                         margin-right: 0rem;
+                                            //                         font-size: 2rem;
+                                            //                         font-weight: 800;
+                                            //                         `
+                                            // );
+
+
+                      // const mudarFooter = document
+                      //                     .querySelector(".piso-aplicacao");     
+                      //           mudarFooter.style.color = "#0f1";
+                      //           mudarFooter.style.backgroundColor = "#000";
+                      //           // mudarFooter.style.marginTop = "10%";
+                                // mudarFooter.style.marginBottom = "10%";
+
+                      // console.log('valor do peso: ',peso);
+                      // console.log('a altura é: ', altura);
+                    
+                    // }
+                  // );                
+
+
+
+    /* let limpar = document
+                  .querySelector('.botoes .limpar')
+                        .addEventListener('click', function() {
+                              let clear = document.
+                                            .querySelector('.dados-peso')
+                                                                    .reset()
+                          
+                        });   */            
   
 
     /* let valorImc = document.querySelectorAll('.secao-aplicacao span');
