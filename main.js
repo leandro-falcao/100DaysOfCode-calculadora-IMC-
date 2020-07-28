@@ -68,6 +68,8 @@
                                                   alterarCss.style.color = '#1c06db';
                                                   alterarCss.style.backgroundColor = '#f1e31b;';
                                   
+                                  let limparResultado = document.querySelector('#resultado')
+                                                            .textContent = ''                
                                                                                                                                             
                               })
 
@@ -76,5 +78,5 @@
       console.log(valorImc[ (valorImc.length-1) ] );
       */
   }
-  
+
   calcularImc()
