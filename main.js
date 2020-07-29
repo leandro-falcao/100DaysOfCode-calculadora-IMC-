@@ -13,7 +13,7 @@
                         const resultado = Number( peso /  Math.pow( (altura / 100), 2) );
 
                         const textImc = document.querySelector('#resultado')
-                                                    
+
 
                         const valorImc = document
                                         .querySelectorAll(`.secao-aplicacao .resultado-imc`);
@@ -64,10 +64,10 @@
                                   let alterarCss = document
                                             .querySelector('.piso-aplicacao');
                                                   alterarCss.style.color = '#1c06db';
-                                                  alterarCss.style.backgroundColor = '#f1e31b;';
+                                                  alterarCss.style.backgroundColor = '#f1e31b';
                                   
                                   let limparResultado = document.querySelector('#resultado')
-                                                            .textContent = ''                
+                                                                        .textContent = ''                
                                                                                                                                             
                               })
 
