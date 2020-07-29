@@ -127,3 +127,18 @@ input{outline: unset;}
 .wrap {flex-wrap: wrap;}
 .justify-center{justify-content: center;}
 .align-center {align-items: center;}
+
+
+
+
+
+.teste {
+   background-color: #0bd859;
+   color: #d62929;
+   margin-top: 0.74rem;
+   margin-bottom: 0.53rem;
+   margin-left: 0rem;
+   margin-right: 0rem;
+   font-size: 2rem;
+   font-weight: 800;
+}
