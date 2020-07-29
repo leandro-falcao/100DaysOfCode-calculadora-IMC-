@@ -12,12 +12,10 @@
 
                         const resultado = Number( peso /  Math.pow( (altura / 100), 2) );
 
-                        console.log(resultado);
+                        const textImc = document.querySelector('#resultado')
+                                                    
 
-                      const mudarBotao = document.querySelector('#root');
-                        console.log(mudarBotao);
-
-                      const valorImc = document
+                        const valorImc = document
                                         .querySelectorAll(`.secao-aplicacao .resultado-imc`);
 
                                 valorImc[valorImc.length - 1]
