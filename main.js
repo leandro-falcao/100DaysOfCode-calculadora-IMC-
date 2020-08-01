@@ -19,9 +19,9 @@
                         const valorImc = document
                                           .querySelector(`.secao-aplicacao .resultado-imc`);
                                     
-                                valorImc.textContent +=  `IMC: ${resultado
+                                valorImc.textContent +=  `IMC= ${resultado
                                                               .toFixed(2)
-                                                              .replace('.', ',') }`
+                                                                  .replace('.', ',') }`
 
                         const cssResultado = document
                                                   .querySelector('.secao-aplicacao .resultado-imc')
