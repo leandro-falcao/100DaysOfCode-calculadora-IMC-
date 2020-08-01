@@ -1,7 +1,9 @@
+  
+  import 
   const calcularImc = () => {
     // escrevendo o valor do calculo do imc
 
-    let clicarBotao = document
+    const clicarBotao = document
             .querySelector('.botoes .calculo')
                   .addEventListener('click', ()=>{
 
@@ -13,11 +15,6 @@
                         const resultado = Number( peso /  Math.pow( (altura / 100), 2) );
 
                         const textImc = document.querySelector('#resultado')
-
-                        
-                        /* const alfa = document
-                                          .querySelector(`#resultado`)
-                                              .textContent = 'IMC:' */
                 
                         const valorImc = document
                                           .querySelector(`.secao-aplicacao .resultado-imc`);
@@ -27,39 +24,27 @@
                                                               .replace('.', ',') }`
 
                         const cssResultado = document
-                                                    .querySelector('.secao-aplicacao  div .resultado-imc')
+                                                  .querySelector('.secao-aplicacao .resultado-imc')
                                                           
-                                         /*  cssResultado.setAttribute('style', `background-color: #0bd859;
-                                                              color: #d62929;
-                                                              margin-top: 0.74rem;
-                                                              margin-bottom: 0.53rem;
-                                                              margin-left: 0rem;
-                                                              margin-right: 0rem;
-                                                              font-size: 2rem;
-                                                              font-weight: 800;
-                                                              `
-                                              ); */
                         const adcClasses = document
                                             .querySelector('#resultado')
-                              adcClasses.classList.add("teste")
-
-
+                                                .classList.add("alteracao");
 
                         const mudarFooter = document
                                             .querySelector(".piso-aplicacao");
-                                  mudarFooter.style.color = "#0f1";
-                                  mudarFooter.style.backgroundColor = "#000";
-                                  // mudarFooter.style.marginTop = "10%";
-                                  // mudarFooter.style.marginBottom = "10%";
+                                  mudarFooter.style.color = "#ffe";
+                                  mudarFooter.style.fontWeight = '900';
+                                  mudarFooter.style.fontSize = '5rem';
 
-                        console.log('valor do peso: ',peso);
+
+                        console.log('valor do peso: ', peso);
                         console.log('a altura é: ', altura);
 
                       }
                   );
 
 
-    let botaoLimpar = document
+    const botaoLimpar = document
             .querySelector('.clear')
             console.log(botaoLimpar);
                   botaoLimpar.addEventListener('click', ()=>{
@@ -73,14 +58,21 @@
                                                   alterarCss.style.backgroundColor = '#f1e31b';
                                   
                                   let limparResultado = document.querySelector('#resultado')
-                                                                        .textContent = ''                
-                                                                                                                                            
+                                                                        .textContent = ''   
+                                                                        
+                                  const delClass = document.querySelector('#resultado')
+                                                                .classList.remove('alteracao')
+
                               })
 
       /* let valorImc = document.querySelectorAll('.secao-aplicacao span');
       valorImc[valorImc.length - 1].insertAdjacentHTML('beforeend', peso);
       console.log(valorImc[ (valorImc.length-1) ] );
       */
+
+      const umaCelula = 3.7
+      const quantasCelulasEmpilhadas = 13 / umaCelula
+      console.log(4*3.7, 'como ');
   }
 
   calcularImc()
