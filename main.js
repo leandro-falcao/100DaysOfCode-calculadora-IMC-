@@ -1,5 +1,4 @@
   
-  import 
   const calcularImc = () => {
     // escrevendo o valor do calculo do imc
 
